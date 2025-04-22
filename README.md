@@ -79,38 +79,3 @@ bashpython src/models/run_esrgan.py --data-dir data/ --output-dir results/
 Оценка результатов
 bashpython src/evaluation/calculate_metrics.py --results-dir results/ --metrics psnr ssim lpips
 
-Эксперименты и результаты
-Исследование включает следующие эксперименты:
-
-Серия I: Сравнение методов на изображениях без текстовых элементов
-Серия II: Сравнение методов на изображениях с текстовыми элементами
-Анализ влияния параметров: Исследование влияния различных параметров моделей на качество супер-разрешения
-
-Результаты представлены в виде:
-
-Количественных метрик (PSNR, SSIM, LPIPS, CLIP-score)
-Визуальных сравнений исходных и восстановленных изображений
-Подробного анализа сильных и слабых сторон каждого метода
-
-Jupyter ноутбуки
-Репозиторий включает несколько Jupyter ноутбуков, демонстрирующих основные аспекты исследования:
-
-notebooks/sdxl_openai_notebook.ipynb: Демонстрирует полный пайплайн с использованием SDXL и анализом изображений через OpenAI API
-notebooks/real_esrgan_pipeline.ipynb: Показывает процесс супер-разрешения с использованием Real-ESRGAN
-notebooks/sd_pipeline.ipynb: Иллюстрирует базовый пайплайн с использованием Stable Diffusion
-
-Цитирование
-Если вы используете этот проект в своей работе, пожалуйста, цитируйте:
-@misc{image-superresolution-comparison,
-  author = {Ваше ФИО},
-  title = {Сравнительный анализ методов супер-разрешения изображений (SD, SDXL, Real-ESRGAN)},
-  year = {2025},
-  publisher = {GitHub},
-  url = {https://github.com/username/image-superresolution-comparison}
-}
-Лицензия
-MIT
-Контакты
-
-Email: your.email@example.com
-GitHub: @username
